@@ -188,7 +188,7 @@ class RubyContext(object):
                     s.connect((self.__ruby_host, self.__ruby_port))
                     s.close()
                     socket_available = True
-                except socket.error, e:
+                except:
                     socket_available = False
                 time.sleep(0.1)
                 tries_remaining -= 1
